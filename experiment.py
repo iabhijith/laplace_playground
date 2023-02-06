@@ -92,7 +92,7 @@ class Experiment:
                 optimizer.step()
                 losses.append(loss.item())
             epoch_loss = sum(losses) / len(losses)
-            if i % 50 == 0:
+            if i % 10 == 0:
                 print(f"Epoch {i} loss: {epoch_loss}")
             epoch_losses.append(epoch_loss)
         return losses
